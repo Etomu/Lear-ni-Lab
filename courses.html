@@ -2,398 +2,240 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lear-Ni Lab Educaional Website</title>
+    <title>Courses</title>
 
-    <!-- ICONSCOUT CDN -->
+    <!-- font awesome cdn link  -->
     <link
       rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
     />
 
-    <!--GOOGLE FONT (MONTSEERAT)-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="stylesheet" href="./css/style.css" />
-    <style>
-      .courses {
-        margin-top: 1rem;
-      }
-    </style>
-
-    <style>
-      body {
-        background-image: url("images/bg-texture.png");
-      }
-    </style>
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <nav>
-      <div class="container nav__container">
-        <a href="home.html"><h4>Lear-Ni Lab</h4></a>
-        <ul class="nav__menu">
-          <li><a href="home.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="courses.html" class="active">Course</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="contact.html">Profile</a></li>
-        </ul>
-        <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
-        <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+    <header class="header">
+      <section class="flex">
+        <a href="Home.html" class="logo">Lear-Ni Lab</a>
+
+        <form action="search.html" method="post" class="search-form">
+          <input
+            type="text"
+            name="search_box"
+            required
+            placeholder="search Courses..."
+            maxlength="100"
+          />
+          <button type="submit" class="fas fa-search"></button>
+        </form>
+
+        <div class="icons">
+          <div id="menu-btn" class="fas fa-bars"></div>
+          <div id="search-btn" class="fas fa-search"></div>
+          <div id="user-btn" class="fas fa-user"></div>
+          <div id="toggle-btn" class="fas fa-sun"></div>
+        </div>
+
+        <div class="profile">
+          <img src="images/avatar-1.png" class="image" alt="" />
+          <h3 class="name">Etomu Tobi</h3>
+          <p class="role">Student</p>
+          <a href="profile.html" class="btn">View Profile</a>
+          <div class="flex-btn">
+            <a href="Login.html" class="option-btn">Login</a>
+            <a href="Register.html" class="option-btn">Register</a>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <div class="side-bar">
+      <div id="close-btn">
+        <i class="fas fa-times"></i>
       </div>
-    </nav>
-    <!--*************** END OF NAVBAR ***************-->
 
-    <section class="courses">
-      <h2>Our Popular Courses</h2>
-      <div class="container courses__container">
-        <article class="course">
-          <div class="course__image">
-            <img src="./images/course1.jpg" />
-          </div>
-          <div class="course__info">
-            <h4>Responsive Social Media Website UI Design</h4>
-            <p>
-              Master the art of designing responsive social media website UIs
-              with our comprehensive course on Lear-Ni Lab. Elevate your skills
-              and create user-friendly interfaces that adapt seamlessly to
-              various devices.
-            </p>
-            <a href="course.html" class="btn btn-primary">Learn More</a>
-          </div>
-        </article>
+      <div class="profile">
+        <img src="images/avatar-1.png" class="image" alt="" />
+        <h3 class="name">Etomu Tobi</h3>
+        <p class="role">Student</p>
+        <a href="profile.html" class="btn">View Profile</a>
+      </div>
 
-        <article class="course">
-          <div class="course__image">
-            <img src="./images/course2.jpg" />
-          </div>
-          <div class="course__info">
-            <h4>Responsive SmartHome Website Design</h4>
-            <p>
-              Explore the exciting realm of smart homes through our course on
-              responsive SmartHome website design. Develop interfaces that
-              control and monitor smart devices seamlessly. Join us on Lear-Ni
-              Lab and revolutionize the way we interact with technology.
-            </p>
-            <a href="course.html" class="btn btn-primary">Learn More</a>
-          </div>
-        </article>
+      <nav class="navbar">
+        <a href="Home.html"><i class="fas fa-Home"></i><span>Home</span></a>
+        <a href="About.html"
+          ><i class="fas fa-question"></i><span>About</span></a
+        >
+        <a href="Courses.html"
+          ><i class="fas fa-graduation-cap"></i><span>Courses</span></a
+        >
+        <a href="register.html"
+          ><i class="fas fa-chalkboard-user"></i><span>Tutors</span></a
+        >
+        <a href="contact.html"
+          ><i class="fas fa-headset"></i><span>Contact us</span></a
+        >
+      </nav>
+    </div>
 
-        <article class="course">
-          <div class="course__image">
-            <img src="./images/course3.jpg" />
-          </div>
-          <div class="course__info">
-            <h4>Responsive Admin Dashboard UI Design</h4>
-            <p>
-              Unlock the secrets of crafting user-friendly admin dashboards with
-              our comprehensive course. Design efficient interfaces for managing
-              data and analytics. Enroll on Lear-Ni Lab and elevate your admin
-              dashboard skills to enhance user experience.
-            </p>
-            <a href="course.html" class="btn btn-primary">Learn More</a>
-          </div>
-        </article>
+    <section class="Courses">
+      <h1 class="heading">Our Courses</h1>
 
-        <article class="course">
-          <div class="course__image">
-            <img src="./images/course4.jpg" />
+      <div class="box-container">
+        <div class="box">
+          <div class="tutor">
+            <img src="images/pic-2.jpg" alt="" />
+            <div class="info">
+              <h3>Tutor</h3>
+              <span>21-10-2022</span>
+            </div>
           </div>
-          <div class="course__info">
-            <h4>Learn How To Code For Beginners</h4>
-            <p>
-              Dive into coding with our beginner course on Lear-Ni Lab. Discover
-              coding languages, syntax, and problem-solving techniques. Build
-              projects and gain confidence to tackle challenges. Start your
-              coding journey today!.
-            </p>
-            <a href="course.html" class="btn btn-primary">Learn More</a>
+          <div class="thumb">
+            <img src="images/thumb-1.png" alt="" />
+            <span>10 videos</span>
           </div>
-        </article>
+          <h3 class="title">complete HTML tutorial</h3>
+          <a href="playlist.html" class="inline-btn">view playlist</a>
+        </div>
 
-        <article class="course">
-          <div class="course__image">
-            <img src="./images/course5.jpg" />
+        <div class="box">
+          <div class="tutor">
+            <img src="images/pic-3.jpg" alt="" />
+            <div class="info">
+              <h3>Tutor</h3>
+              <span>21-10-2022</span>
+            </div>
           </div>
-          <div class="course__info">
-            <h4>HTML Tutorial for Beginners</h4>
-            <p>
-              Learn the basics of HTML coding and kickstart your web development
-              journey. Dive into creating web pages and understanding the
-              structure of websites with our beginner-friendly course!.
-            </p>
-            <a href="course.html" class="btn btn-primary">Learn More</a>
+          <div class="thumb">
+            <img src="images/thumb-2.png" alt="" />
+            <span>10 videos</span>
           </div>
-        </article>
+          <h3 class="title">complete CSS tutorial</h3>
+          <a href="playlist.html" class="inline-btn">view playlist</a>
+        </div>
 
-        <article class="course">
-          <div class="course__image">
-            <img src="./images/course6.jpg" />
+        <div class="box">
+          <div class="tutor">
+            <img src="images/pic-4.jpg" alt="" />
+            <div class="info">
+              <h3>Tutor</h3>
+              <span>21-10-2022</span>
+            </div>
           </div>
-          <div class="course__info">
-            <h4>Create a Responsive Social Media Website</h4>
-            <p>
-              Immerse yourself in the world of social media design with our
-              comprehensive course. Learn to create stunning, user-centric
-              interfaces that enhance engagement and interactions. Join Lear-Ni
-              Lab and become a master of social media website UI design.
-            </p>
-            <a href="course.html" class="btn btn-primary">Learn More</a>
+          <div class="thumb">
+            <img src="images/thumb-3.png" alt="" />
+            <span>10 videos</span>
           </div>
-        </article>
+          <h3 class="title">complete JS tutorial</h3>
+          <a href="playlist.html" class="inline-btn">view playlist</a>
+        </div>
 
-        <article class="course">
-          <div class="course__image">
-            <img src="./images/course7.jpg" />
+        <div class="box">
+          <div class="tutor">
+            <img src="images/pic-5.jpg" alt="" />
+            <div class="info">
+              <h3>Tutor</h3>
+              <span>21-10-2022</span>
+            </div>
           </div>
-          <div class="course__info">
-            <h4>Create a Responsive Social Media Website UI Design</h4>
-            <p>
-              Immerse yourself in the world of social media design with our
-              comprehensive course. Learn to create stunning, user-centric
-              interfaces that enhance engagement and interactions. Join Lear-Ni
-              Lab and become a master of social media website UI design.
-            </p>
-            <a href="course.html" class="btn btn-primary">Learn More</a>
+          <div class="thumb">
+            <img src="images/thumb-4.png" alt="" />
+            <span>10 videos</span>
           </div>
-        </article>
+          <h3 class="title">complete Boostrap tutorial</h3>
+          <a href="playlist.html" class="inline-btn">view playlist</a>
+        </div>
 
-        <article class="course">
-          <div class="course__image">
-            <img src="./images/course8.jpg" />
+        <div class="box">
+          <div class="tutor">
+            <img src="images/pic-6.jpg" alt="" />
+            <div class="info">
+              <h3>Tutor</h3>
+              <span>21-10-2022</span>
+            </div>
           </div>
-          <div class="course__info">
-            <h4>Create a Responsive Food Website</h4>
-            <p>
-              Indulge in web design by creating a responsive food website. Learn
-              to design appealing layouts for showcasing delicious dishes and
-              captivating your audience.
-            </p>
-            <a href="course.html" class="btn btn-primary">Learn More</a>
+          <div class="thumb">
+            <img src="images/thumb-5.png" alt="" />
+            <span>10 videos</span>
           </div>
-        </article>
+          <h3 class="title">complete JQuery tutorial</h3>
+          <a href="playlist.html" class="inline-btn">view playlist</a>
+        </div>
 
-        <article class="course">
-          <div class="course__image">
-            <img src="./images/course9.jpg" />
+        <div class="box">
+          <div class="tutor">
+            <img src="images/pic-7.jpg" alt="" />
+            <div class="info">
+              <h3>Tutor</h3>
+              <span>21-10-2022</span>
+            </div>
           </div>
-          <div class="course__info">
-            <h4>Create a Responsive Replica Of Netflix Website Design</h4>
-            <p>
-              Uncover the secrets behind Netflix's user interface design.
-              Develop a responsive replica of their website and enhance your web
-              design skills.
-            </p>
-            <a href="course.html" class="btn btn-primary">Learn More</a>
+          <div class="thumb">
+            <img src="images/thumb-6.png" alt="" />
+            <span>10 videos</span>
           </div>
-        </article>
+          <h3 class="title">complete SASS tutorial</h3>
+          <a href="playlist.html" class="inline-btn">view playlist</a>
+        </div>
 
-        <article class="course">
-          <div class="course__image">
-            <img src="./images/course10.jpg" />
+        <div class="box">
+          <div class="tutor">
+            <img src="images/pic-8.jpg" alt="" />
+            <div class="info">
+              <h3>Tutor</h3>
+              <span>21-10-2022</span>
+            </div>
           </div>
-          <div class="course__info">
-            <h4>Create Your First Single Page Website</h4>
-            <p>
-              Embark on your web development journey with our course on creating
-              your first single-page website. Learn essential HTML, CSS, and
-              JavaScript skills to build a dynamic and responsive site. Join us
-              on Lear-Ni Lab and take your first step toward becoming a web
-              developer.
-            </p>
-            <a href="course.html" class="btn btn-primary">Learn More</a>
+          <div class="thumb">
+            <img src="images/thumb-7.png" alt="" />
+            <span>10 videos</span>
           </div>
-        </article>
+          <h3 class="title">complete PHP tutorial</h3>
+          <a href="playlist.html" class="inline-btn">view playlist</a>
+        </div>
 
-        <article class="course">
-          <div class="course__image">
-            <img src="./images/course11.jpg" />
+        <div class="box">
+          <div class="tutor">
+            <img src="images/pic-9.jpg" alt="" />
+            <div class="info">
+              <h3>Tutor</h3>
+              <span>21-10-2022</span>
+            </div>
           </div>
-          <div class="course__info">
-            <h4>Responsive Admin Dashboard UI Design</h4>
-            <p>
-              Unlock the secrets of designing sleek and functional admin
-              dashboard UIs. Gain valuable skills in creating user-friendly
-              interfaces for managing web applications efficiently.
-            </p>
-            <a href="course.html" class="btn btn-primary">Learn More</a>
+          <div class="thumb">
+            <img src="images/thumb-8.png" alt="" />
+            <span>10 videos</span>
           </div>
-        </article>
+          <h3 class="title">complete MySQL tutorial</h3>
+          <a href="playlist.html" class="inline-btn">view playlist</a>
+        </div>
 
-        <article class="course">
-          <div class="course__image">
-            <img src="./images/course12.jpg" />
+        <div class="box">
+          <div class="tutor">
+            <img src="images/avatar-1.png" alt="" />
+            <div class="info">
+              <h3>Tutor</h3>
+              <span>21-10-2022</span>
+            </div>
           </div>
-          <div class="course__info">
-            <h4>Create a Replica Of Google Homepage Design</h4>
-            <p>
-              Immerse yourself in web design by replicating Google's iconic
-              homepage. Learn essential design techniques while recreating a
-              user-friendly interface.
-            </p>
-            <a href="course.html" class="btn btn-primary">Learn More</a>
+          <div class="thumb">
+            <img src="images/thumb-9.png" alt="" />
+            <span>10 videos</span>
           </div>
-        </article>
-
-        <article class="course">
-          <div class="course__image">
-            <img src="./images/course13.jpg" />
-          </div>
-          <div class="course__info">
-            <h4>Create a Simple Personal-care Product Website</h4>
-            <p>
-              Explore the world of e-commerce by designing a simple yet
-              functional personal-care product website. Develop a responsive
-              online platform to showcase and sell your products.
-            </p>
-            <a href="course.html" class="btn btn-primary">Learn More</a>
-          </div>
-        </article>
-
-        <article class="course">
-          <div class="course__image">
-            <img src="./images/course14.jpg" />
-          </div>
-          <div class="course__info">
-            <h4>Create a Responsive Contact-Form Page</h4>
-            <p>
-              Enhance user interaction with a responsive contact form page.
-              Design an intuitive and visually appealing form that encourages
-              users to connect with you.
-            </p>
-            <a href="course.html" class="btn btn-primary">Learn More</a>
-          </div>
-        </article>
-
-        <article class="course">
-          <div class="course__image">
-            <img src="./images/course15.jpg" />
-          </div>
-          <div class="course__info">
-            <h4>Create a Responsive Landing Page Design</h4>
-            <p>
-              Capture visitors' attention with a compelling landing page design.
-              Create a responsive layout that drives engagement and converts
-              leads effectively.
-            </p>
-            <a href="course.html" class="btn btn-primary">Learn More</a>
-          </div>
-        </article>
-
-        <article class="course">
-          <div class="course__image">
-            <img src="./images/course16.jpg" />
-          </div>
-          <div class="course__info">
-            <h4>Responsive Personal Website UI Design</h4>
-            <p>
-              Craft a personal website that showcases your skills and
-              personality. Learn to design a responsive and visually appealing
-              website to make a lasting online impression.
-            </p>
-            <a href="course.html" class="btn btn-primary">Learn More</a>
-          </div>
-        </article>
-
-        <article class="course">
-          <div class="course__image">
-            <img src="./images/course17.jpg" />
-          </div>
-          <div class="course__info">
-            <h4>Responsive Admin Dashboard UI Design</h4>
-            <p>
-              Enhance your skills in crafting user-centric admin dashboards with
-              our course. Design interfaces that streamline data management and
-              visualization. Join Lear-Ni Lab and create impactful admin
-              dashboards that drive efficiency and productivity.
-            </p>
-            <a href="course.html" class="btn btn-primary">Learn More</a>
-          </div>
-        </article>
-
-        <article class="course">
-          <div class="course__image">
-            <img src="./images/course18.jpg" />
-          </div>
-          <div class="course__info">
-            <h4>Responsive SmartHome Website Design</h4>
-            <p>
-              Discover how to design a modern and responsive SmartHome website
-              interface. Master the art of creating user-friendly layouts that
-              adapt seamlessly to different screen sizes.
-            </p>
-            <a href="course.html" class="btn btn-primary">Learn More</a>
-          </div>
-        </article>
+          <h3 class="title">complete react tutorial</h3>
+          <a href="playlist.html" class="inline-btn">view playlist</a>
+        </div>
       </div>
     </section>
-    <!--*************** END OF COURSES ***************-->
 
-    <footer>
-      <div class="container footer__container">
-        <div class="footer1">
-          <a href="home.html" class="footer__logo"><h4>Lear-Ni Lab</h4></a>
-          <p>
-            Empower your tech journey with Lear-Ni Lab. Explore our diverse
-            range of courses to master the ever-evolving world of technology.
-            Join us and unlock endless learning possibilities!.
-          </p>
-        </div>
-
-        <div class="footer2">
-          <h4>Permalinks</h4>
-          <ul class="permalinks">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="courses.html">Courses</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="contact.html">Profile</a></li>
-          </ul>
-        </div>
-
-        <div class="footer3">
-          <h4>Primacy</h4>
-          <ul class="privacy">
-            <li><a href="a">Privacy Policy</a></li>
-            <li><a href="a">Terms and Conditions</a></li>
-            <li><a href="a">Refund Policy</a></li>
-          </ul>
-        </div>
-
-        <div class="footer4">
-          <h4>Contact Us</h4>
-          <div>
-            <p>+234 9068216597</p>
-            <p>Etomutobi48@gmasil.com</p>
-          </div>
-
-          <ul class="footer__socials">
-            <li>
-              <a href="https://facebook.com"
-                ><i class="uil uil-facebook-f"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://instagram.com"
-                ><i class="uil uil-instagram"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://twitter.com"><i class="uil uil-twitter"></i></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__copyright">
-        <small>Copyright &copy; Lear-Ni Lab Educational Website</small>
-      </div>
+    <footer class="footer">
+      &copy; copyright @ 2024 For <span>Alx Final Project</span> | All Rights
+      Reserved!
     </footer>
 
-    <script src="./main.js"></script>
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
   </body>
 </html>
